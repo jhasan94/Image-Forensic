@@ -1,6 +1,6 @@
 # image_forensic
 
-A new Flutter application.
+Api based Flutter application.
 
 ## Getting Started
 
