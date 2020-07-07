@@ -15,7 +15,6 @@ class _SignUpPageState extends State<SignUpPage> {
     SizeConfig().init(context);
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
         body: Container(width: SizeConfig.blockSizeHorizontal*100,
           height: SizeConfig.blockSizeVertical*100,
           //background image set

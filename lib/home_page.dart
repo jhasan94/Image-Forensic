@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'file:///D:/flutterProject/police_img_proces/lib/ui/image_forensic.dart';
 import 'package:police_img_proces/setting_page.dart';
 import 'package:police_img_proces/size_config.dart';
 
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     SizeConfig().init(context);
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(title: Text("Home Page"),centerTitle: true,),
         body: IndexedStack(
           index: _currentIndex,
           children: [
@@ -36,6 +37,11 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       GestureDetector(
                         child: Image.asset('assets/image-forensic.png'),
+                        onTap: (){
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => ImageForensic()));
+
+                        },
                       ),
                       GestureDetector(
                         child: Image.asset('assets/999-emergency-call.png'),
@@ -59,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            //setting class 
+            //setting class
             SettingPage(),
           ],
         ),
