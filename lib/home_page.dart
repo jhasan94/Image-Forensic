@@ -76,6 +76,7 @@ class _HomePageState extends State<HomePage> {
     onTap: (newIndex) => setState((){_currentIndex = newIndex;}),
           items: [
             BottomNavigationBarItem(
+
                 icon: Icon(Icons.home),
                 title: Text(
                   "Home",
